@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <p>Reaz Ahammed</p>
+        <a href="/">Reaz Ahammed</a>
       </div>
       <div className="menu-items">
         {menus.map((item, key) => (
@@ -37,13 +37,13 @@ const Header = () => {
             <span className="brc"> {"/>"}</span>
           </a>
         ))}
-
-        <a className="resume-download">
+        <a href="/download" className="resume-download">
           <button className="button1">
-            <p> RESUME</p>
+            <p>{"<Download CV/>"}</p>
           </button>
         </a>
       </div>
+  
     </div>
   );
 };
