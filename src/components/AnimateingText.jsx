@@ -14,7 +14,7 @@ const AnimateingText = ({ text }) => {
           ref.current.innerText = temp;
         }
       }
-    }, 300);
+    }, 200);
   };
   useEffect(() => {
     startAnimation();

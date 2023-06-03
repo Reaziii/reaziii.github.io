@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import landingpagedata from "../data/landingpage.json";
 import AnimateingText from "../components/AnimateingText";
-import { name } from "../assets/svgs";
+import { name, borderbuttonsvg, resumebuttonbackground1 } from "../assets/svgs";
 const LandingPage = () => {
   useEffect(() => {
     const items = document.querySelectorAll("#landingsvg svg path");
@@ -40,9 +40,13 @@ const LandingPage = () => {
       </div>
       <div className="download-resume">
         <div className="download-button">
-          <div className="box"></div>
+          <div className="box">{borderbuttonsvg}</div>
+          <div className="box box2">{borderbuttonsvg}</div>
+
           <div className="under-box">
             <div className="background">{"</>"}</div>
+            <div className="background bg2">{resumebuttonbackground1}</div>
+            <div className="background bg3"></div>
             <div className="brc">{"<>"}</div>
             <p>
               <AnimateingText text={"RESUME"} />

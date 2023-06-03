@@ -46,3 +46,49 @@ export const landingpage = (
     <path d="M320.5 93H61L13.5 180V317" stroke="white" stroke-width="2" />
   </svg>
 );
+
+export const borderbuttonsvg = (
+  <svg
+    width="211"
+    height="211"
+    viewBox="0 0 211 211"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width="211" height="211" rx="105.5" fill="white" fill-opacity="0" />
+    <mask id="path-2-inside-1_0_1" fill="white">
+      <path d="M211 105.5C211 86.6086 205.927 68.0637 196.312 51.8024C186.697 35.541 172.891 22.1599 156.338 13.0566C139.784 3.95332 121.09 -0.538135 102.208 0.051379C83.3256 0.640893 64.948 6.28975 48.9947 16.4079L61.701 36.442C74.0669 28.5991 88.3119 24.2205 102.948 23.7636C117.584 23.3066 132.075 26.7881 144.906 33.8443C157.737 40.9006 168.438 51.2727 175.891 63.8773C183.344 76.482 187.276 90.8567 187.276 105.5H211Z" />
+    </mask>
+    <path
+      d="M211 105.5C211 86.6086 205.927 68.0637 196.312 51.8024C186.697 35.541 172.891 22.1599 156.338 13.0566C139.784 3.95332 121.09 -0.538135 102.208 0.051379C83.3256 0.640893 64.948 6.28975 48.9947 16.4079L61.701 36.442C74.0669 28.5991 88.3119 24.2205 102.948 23.7636C117.584 23.3066 132.075 26.7881 144.906 33.8443C157.737 40.9006 168.438 51.2727 175.891 63.8773C183.344 76.482 187.276 90.8567 187.276 105.5H211Z"
+      fill="#64FFDA"
+      fill-opacity="0.3"
+      stroke="#64FFDA"
+      stroke-opacity="0.49"
+      stroke-width="2"
+      mask="url(#path-2-inside-1_0_1)"
+    />
+  </svg>
+);
+
+export const resumebuttonbackground1 = (
+  <svg
+    width="188"
+    height="188"
+    viewBox="0 0 188 188"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width="188" height="188" rx="94" fill="white" fill-opacity="0.03" />
+    <rect
+      x="0.5"
+      y="0.5"
+      width="187"
+      height="187"
+      rx="93.5"
+      stroke="#64FFDA"
+      stroke-opacity="0.42"
+      stroke-dasharray="5 5"
+    />
+  </svg>
+);

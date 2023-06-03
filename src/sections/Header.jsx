@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 const Header = () => {
   const menus = [
     {
@@ -8,20 +8,43 @@ const Header = () => {
     },
     {
       id: "01.",
+      title: "Skills",
+      link: "#skills",
+    },
+    {
+      id: "02.",
       title: "Experience",
       link: "#experience",
     },
     {
-      id: "02.",
-      title: "Projects",
-      link: "#projects",
+      id: "03.",
+      title: "Portfolio",
+      link: "#portfolio",
     },
     {
-      id: "03.",
+      id: "04.",
       title: "Contact",
       link: "#contact",
     },
   ];
+  useEffect(() => {
+    const smoothScrollLinks = document.querySelectorAll(".menu-item");
+
+    smoothScrollLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const targetId = link.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement != null) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+  }, []);
 
   return (
     <div className="header">
@@ -37,13 +60,12 @@ const Header = () => {
             <span className="brc"> {"/>"}</span>
           </a>
         ))}
-        <a href="/download" className="resume-download">
+        {/* <a href="/download" className="resume-download">
           <button className="button1">
             <p>{"<Download CV/>"}</p>
           </button>
-        </a>
+        </a> */}
       </div>
-  
     </div>
   );
 };

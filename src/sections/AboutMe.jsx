@@ -20,12 +20,16 @@ const AboutMe = () => {
             <img src={profilepic} alt="profile" />
           </div>
         </div>
-        <p>
-          {database.bigaboutme1}
-          <br />
-          <br />
-          {database.bigaboutme2}
-        </p>
+        <div className="about-me-text">
+          <p className="brc">{"<p>"}</p>
+          <div className="text">
+            {database.bigaboutme1}
+            <br />
+            <br />
+            {database.bigaboutme2}
+          </div>
+          <p className="brc">{"</p>"}</p>
+        </div>
       </div>
     </section>
   );
