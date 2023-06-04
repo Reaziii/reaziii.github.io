@@ -33,7 +33,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="download-resume">
-        <a download={true} href="/assets/reazahammed.pdf">
+        <a target="_blank" href="/assets/reazahammed.pdf">
           <div className="download-button">
             <div className="box">{borderbuttonsvg}</div>
             <div className="box box2">{borderbuttonsvg}</div>
