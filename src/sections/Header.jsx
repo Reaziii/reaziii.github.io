@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
-import { logo } from "../assets/svgs";
+import React, { useEffect, useRef } from "react";
+import { closebutton, logo, menu } from "../assets/svgs";
 const Header = () => {
+  const menuRef = useRef();
   const menus = [
     {
       id: "00.",
@@ -30,7 +31,6 @@ const Header = () => {
   ];
   useEffect(() => {
     const smoothScrollLinks = document.querySelectorAll(".menu-item");
-
     smoothScrollLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
         event.preventDefault();
@@ -46,13 +46,28 @@ const Header = () => {
       });
     });
   }, []);
+  const toggleMenu = () => {
+    if (menuRef.current) {
+      if (menuRef.current.classList.contains("close")) {
+        menuRef.current.classList.remove("close");
+      } else {
+        menuRef.current.classList.add("close");
+      }
+    }
+  };
 
   return (
     <div className="header">
       <div className="logo">
         <a href="/">{logo}</a>
       </div>
-      <div className="menu-items">
+      <div onClick={toggleMenu} className="close-button">
+        {menu}
+      </div>
+      <div ref={menuRef} className="menu-items">
+        <div onClick={toggleMenu} className="close-button">
+          {closebutton}
+        </div>
         {menus.map((item, key) => (
           <a href={item.link} key={key} className="menu-item">
             <p className="id">{item.id}</p>
@@ -61,11 +76,6 @@ const Header = () => {
             <span className="brc"> {"/>"}</span>
           </a>
         ))}
-        {/* <a href="/download" className="resume-download">
-          <button className="button1">
-            <p>{"<Download CV/>"}</p>
-          </button>
-        </a> */}
       </div>
     </div>
   );
