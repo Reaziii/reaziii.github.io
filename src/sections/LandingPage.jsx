@@ -3,13 +3,7 @@ import landingpagedata from "../data/landingpage.json";
 import AnimateingText from "../components/AnimateingText";
 import { name, borderbuttonsvg, resumebuttonbackground1 } from "../assets/svgs";
 const LandingPage = () => {
-  useEffect(() => {
-    const items = document.querySelectorAll("#landingsvg svg path");
-    items.forEach((item) => {
-      console.log(item.getTotalLength());
-    });
-  }, []);
-
+  const downloadResume = () => {};
   return (
     <section id="#home" className="landing-page">
       <div className="landing-details">
@@ -39,21 +33,23 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="download-resume">
-        <div className="download-button">
-          <div className="box">{borderbuttonsvg}</div>
-          <div className="box box2">{borderbuttonsvg}</div>
+        <a download={true} href="/assets/reazahammed.pdf">
+          <div className="download-button">
+            <div className="box">{borderbuttonsvg}</div>
+            <div className="box box2">{borderbuttonsvg}</div>
 
-          <div className="under-box">
-            <div className="background">{"</>"}</div>
-            <div className="background bg2">{resumebuttonbackground1}</div>
-            <div className="background bg3"></div>
-            <div className="brc">{"<>"}</div>
-            <p>
-              <AnimateingText text={"RESUME"} />
-            </p>
-            <div className="brc">{"</>"}</div>
+            <div className="under-box">
+              <div className="background">{"</>"}</div>
+              <div className="background bg2">{resumebuttonbackground1}</div>
+              <div className="background bg3"></div>
+              <div className="brc">{"<>"}</div>
+              <p>
+                <AnimateingText text={"RESUME"} />
+              </p>
+              <div className="brc">{"</>"}</div>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );
