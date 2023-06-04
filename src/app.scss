@@ -8,8 +8,6 @@
   --dmsansfont: "DM Sans", sans-serif;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -22,8 +20,11 @@ body {
   width: 100%;
 }
 
-section{
+section {
   padding: 0 200px;
+  @media screen and (max-width: 1040px) {
+    padding: 0 100px;
+  }
 }
 
 .section-title {
@@ -39,6 +40,9 @@ section{
       color: white;
       margin-left: 45px;
       margin-right: 55px;
+      @media screen and (max-width: 1040px) {
+        font-size: 30px;
+      }
       span {
         color: var(--lightcolor);
         font-family: var(--codeprofont);
@@ -51,6 +55,9 @@ section{
       font-family: var(--codeprofont);
       &:nth-child(3) {
         text-align: right;
+      }
+      @media screen and (max-width: 1040px) {
+        font-size: 14px;
       }
     }
   }
@@ -74,10 +81,31 @@ section{
   width: 100%;
   max-width: 1440px;
   z-index: 1000;
+
+  @media screen and (max-width: 1040px) {
+    padding: 0 40px;
+  }
   .logo {
     a {
       font-size: 20px;
       transition: 0.5s;
+      svg {
+        height: 40px;
+        width: 40px;
+        path {
+          stroke: var(--lightcolor);
+        }
+        path:nth-child(1) {
+          stroke-dasharray: 376;
+          stroke-dashoffset: 376;
+          animation: anim-line 1s ease forwards;
+        }
+        path:nth-child(2) {
+          stroke-dasharray: 440;
+          stroke-dashoffset: 440;
+          animation: anim-line 1s cubic-bezier(1, -0.04, 0.58, 1) forwards;
+        }
+      }
       &:hover {
         color: var(--lightcolor);
       }
@@ -92,6 +120,9 @@ section{
       font-size: 12px;
       font-family: var(--spacefont);
       align-items: center;
+      @media screen and (max-width: 1040px) {
+        margin-left: 20px;
+      }
       .id {
         margin-right: 5px;
         color: var(--lightcolor);
@@ -150,7 +181,11 @@ section{
   display: flex;
   min-height: 100vh;
   max-height: 700px;
-
+  @media screen and (max-width: 1040px) {
+    padding: 0 100px;
+    flex-direction: column;
+    justify-content: center;
+  }
   .landing-details {
     display: flex;
     flex-direction: column;
@@ -282,6 +317,10 @@ section{
     align-items: center;
     justify-content: center;
     width: 30%;
+    @media screen and (max-width: 1040px) {
+      margin-top: 100px;
+      margin-left: 20px;
+    }
     .download-button {
       position: relative;
       height: 170px;
@@ -444,7 +483,6 @@ section{
 }
 
 .about-me {
-  
   .about-sec {
     box-sizing: border-box;
     display: flex;
@@ -463,13 +501,24 @@ section{
         border-bottom-right-radius: 20px;
         background-color: red;
         margin-left: 30px;
+        @media screen and (max-width: 1040px) {
+          width: 250px;
+          height: 250px;
+          margin-left: 0;
+        }
         img {
           border-top-right-radius: 80px;
           border-top-left-radius: 20px;
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px;
-          height: 300px;
-          width: 300px;
+          height: 100%;
+          width: 100%;
+          @media screen and (max-width: 1040px) {
+            border-top-right-radius: 40px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
         }
         &::before {
           content: "";
@@ -481,6 +530,11 @@ section{
           border-radius: 20px;
           border: 2px solid var(--lightcolor);
           z-index: -1;
+          @media screen and (max-width: 1040px) {
+            border-radius: 10px;
+            bottom: -15px;
+            left: -15px;
+          }
         }
       }
     }
@@ -495,6 +549,10 @@ section{
         text-align: justify;
         color: var(--spacelight);
         opacity: 0.8;
+        @media screen and (max-width: 1040px) {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }
@@ -530,7 +588,6 @@ section{
 }
 
 .skills {
-  
   .my-skills {
     margin-top: 50px;
     padding-bottom: 50px;
@@ -561,7 +618,11 @@ section{
 
 .experience {
   min-height: 100vh;
-  
+
+  @media screen and (max-width: 1040px) {
+    min-height: unset;
+  }
+
   .my-experience {
     display: flex;
     margin-top: 50px;
@@ -577,6 +638,10 @@ section{
         box-sizing: border-box;
         font-family: var(--dmsansfont);
         transition: 0.5s all;
+        @media screen and (max-width: 1040px) {
+          width: 150px;
+          font-size: 12px;
+        }
         cursor: pointer;
         &:hover {
           background-color: #64ffdb10;
@@ -608,6 +673,9 @@ section{
       h1 {
         font-family: var(--dmsansfont);
         color: var(--spacelight);
+        @media screen and (max-width: 1040px) {
+          font-size: 20px;
+        }
         span {
           color: var(--lightcolor);
         }
@@ -617,6 +685,9 @@ section{
         color: var(--spacelight);
         opacity: 0.6;
         font-family: var(--dmsansfont);
+        @media screen and (max-width: 1040px) {
+          font-size: 10px;
+        }
       }
       .works {
         margin-top: 30px;
@@ -628,6 +699,9 @@ section{
             opacity: 0.6;
             font-family: var(--dmsansfont);
             text-align: justify;
+            @media screen and (max-width: 1040px) {
+              font-size: 14px;
+            }
           }
           .dot {
             height: 6px;
@@ -644,7 +718,6 @@ section{
 }
 
 .portfolio {
-  
   box-sizing: border-box;
   .my-portfolio {
     margin-top: 100px;
@@ -667,6 +740,9 @@ section{
       font-weight: bold;
       letter-spacing: 2px;
       max-width: 35%;
+      @media screen and (max-width: 1040px) {
+        font-size: 20px;
+      }
     }
     .date {
       display: flex;
@@ -703,6 +779,9 @@ section{
       box-shadow: #2d2b2b27 0px 3px 8px;
       border-radius: 10px;
       margin-top: 20px;
+      @media screen and (max-width: 1040px) {
+        width: 65%;
+      }
       li {
         margin-bottom: 10px;
         color: var(--spacelight);
@@ -736,8 +815,12 @@ section{
   }
 }
 .contact-me {
-  
   padding-bottom: 100px;
+  @media screen and (max-width: 1040px) {
+    .section-title {
+      padding-top: 0;
+    }
+  }
   .contact {
     display: flex;
     flex-direction: column;
@@ -773,6 +856,7 @@ section{
 .footer {
   text-align: center;
   margin: 40px 0;
+
   a {
     color: var(--spacelight);
     transition: 1s all;

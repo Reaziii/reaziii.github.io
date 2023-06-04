@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { logo } from "../assets/svgs";
 const Header = () => {
   const menus = [
     {
@@ -49,7 +50,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <a href="/">Reaz Ahammed</a>
+        <a href="/">{logo}</a>
       </div>
       <div className="menu-items">
         {menus.map((item, key) => (
