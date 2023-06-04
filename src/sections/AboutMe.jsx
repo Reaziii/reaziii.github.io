@@ -17,6 +17,7 @@ const AboutMe = () => {
       <div className="about-sec">
         <div className="profilepic">
           <div className="img">
+            <div className="backdrop"></div>
             <img src={profilepic} alt="profile" />
           </div>
         </div>

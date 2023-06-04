@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Full Stack Developer",
+    "company": "Freelancer web dev",
+    "started": "June 2020",
+    "ended": "ongoing",
+    "works": [
+      "Develop websites tailored to client requirements with precision.",
+      "Implement visually appealing front-end designs using HTML, CSS, JavaScript.",
+      "Build robust back-end functionalities with programming languages like nodejs, PHP.",
+      "Provide ongoing website maintenance, updates, and technical support."
+    ]
+  },
+  {
+    "title": "React Developer (Intern)",
+    "company": "Superworld",
+    "started": "November 2021",
+    "ended": "April 2022",
+    "works": [
+      "Translated interactive designs from Figma into functional React components.",
+      "Collaborated with design and development teams to ensure accurate implementation.",
+      "Implemented responsive layouts and optimized user experience across different devices.",
+      "Conducted thorough testing and debugging to ensure smooth functionality."
+    ]
+  }
+]

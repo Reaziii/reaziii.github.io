@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Android Music Player",
+    "banner": "xplayer",
+    "features": [
+      "Play, pause, and control playback of music tracks.",
+      "Navigate between the previous and next tracks.",
+      "Create and manage custom playlists.",
+      "Display track information, including title, artist, and album.",
+      "Support for notification media controls."
+    ],
+    "technology": [
+      "Android stuio",
+      "Android material UI",
+      "SQLite DB",
+      "JAVA",
+      "OOP"
+    ],
+    "links": [
+      {
+        "icon": "github",
+        "url": "https://github.com/Reaziii/xplayer-android-music-player"
+      },
+      {
+        "icon": "link",
+        "url": "https://github.com/Reaziii/xplayer-android-music-player/releases/tag/MusicPlayer"
+      }
+    ],
+    "year": "2023"
+  },
+  {
+    "title": "Peer to Peer File Share",
+    "banner": "peertopeer",
+    "features": [
+      "Upload files and generate unique sharing links.",
+      "Direct peer-to-peer file transfer using WebRTC connection.",
+      "Real-time signaling using Firebase as a signaling server.",
+      "Progress bar to track file upload and download progress.",
+      "Simple and intuitive user interface."
+    ],
+    "technology": ["webRTC", "Firebase", "React js", "SASS"],
+    "links": [
+      {
+        "icon": "github",
+        "url": "https://github.com/Reaziii/peer-to-peer-share"
+      },
+      {
+        "icon": "link",
+        "url": "https://i-share-reactjs.vercel.app/"
+      }
+    ],
+    "year": "2023"
+  },
+  {
+    "title": "Safeexchange Crypto App",
+    "banner": "safeexchange",
+    "features": [
+      "Intuitive and visually appealing user interface.",
+      "Smooth and engaging animations.",
+      "Responsive layout for different screen sizes.",
+      "Interactive components for user interaction.",
+      "Performance optimization for efficient operation."
+    ],
+    "technology": ["React js", "javascript", "SASS"],
+    "links": [
+      {
+        "icon": "github",
+        "url": "https://github.com/Reaziii/safecity"
+      },
+      {
+        "icon": "link",
+        "url": "https://safeexchange.netlify.app/"
+      }
+    ],
+    "year": "2021"
+  },
+  {
+    "title": "Ecomerce App Dashboard",
+    "banner": "ecomshop",
+    "features": [
+      "Creating new catagories, and subcatagories",
+      "Updating new products under subcatagories",
+      "Managing Banner, User, Coupon, orders and messages",
+      "Handling Reviews of users",
+      "Interactive Dashboard"
+    ],
+    "technology": ["Node js", "React Js", "Express js", "SASS", "mongodb"],
+    "links": [
+      {
+        "icon": "github",
+        "url": "https://github.com/Reaziii/ECOM-SHOP"
+      }
+    ],
+    "year": "2021"
+  },
+  {
+    "title": "Safeexchange Crypto App",
+    "banner": "safeexchange",
+    "features": [
+      "Intuitive and visually appealing user interface.",
+      "Smooth and engaging animations.",
+      "Responsive layout for different screen sizes.",
+      "Interactive components for user interaction.",
+      "Performance optimization for efficient operation."
+    ],
+    "technology": ["React js", "javascript", "SASS"],
+    "links": [
+      {
+        "icon": "github",
+        "url": "https://github.com/Reaziii/safecity"
+      },
+      {
+        "icon": "link",
+        "url": "https://safeexchange.netlify.app/"
+      }
+    ],
+    "year": "2021"
+  }
+]
