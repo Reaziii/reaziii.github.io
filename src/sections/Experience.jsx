@@ -17,7 +17,11 @@ const Experience = () => {
       <div className="my-experience">
         <div className="titles">
           {experiences.map((item, key) => (
-            <div onClick={() => setActive(key)} key={key} className="job-title">
+            <div
+              onClick={() => setActive(key)}
+              key={key}
+              className={"job-title" + (active === key ? " active" : "")}
+            >
               {item.company}
             </div>
           ))}

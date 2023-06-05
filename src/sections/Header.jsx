@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { closebutton, logo, menu } from "../assets/svgs";
 const Header = () => {
   const menuRef = useRef();
+  const menuButtonRef = useRef();
   const menus = [
     {
       id: "00.",
@@ -45,7 +46,19 @@ const Header = () => {
         }
       });
     });
+    window.addEventListener("click", (e) => {
+      if (menuButtonRef.current && !menuButtonRef.current.contains(e.target)) {
+        if (menuRef.current && !menuRef.current.contains(e.target)) {
+          if (menuRef.current) {
+            if (!menuRef.current.classList.contains("close")) {
+              menuRef.current.classList.add("close");
+            }
+          }
+        }
+      }
+    });
   }, []);
+
   const toggleMenu = () => {
     if (menuRef.current) {
       if (menuRef.current.classList.contains("close")) {
@@ -61,10 +74,10 @@ const Header = () => {
       <div className="logo">
         <a href="/">{logo}</a>
       </div>
-      <div onClick={toggleMenu} className="close-button">
+      <div ref={menuButtonRef} onClick={toggleMenu} className="close-button">
         {menu}
       </div>
-      <div ref={menuRef} className="menu-items">
+      <div ref={menuRef} className="menu-items close">
         <div onClick={toggleMenu} className="close-button">
           {closebutton}
         </div>

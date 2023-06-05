@@ -21,9 +21,9 @@ const LandingPage = () => {
         </div>
 
         <div className="tag tab2 tab4">
-          <div className="brc">{"<h1>"}</div>
+          <div className="brc">{"<h2>"}</div>
           <h1>Building Scalable and Robust Software Solutions</h1>
-          <div className="brc">{"</h1>"}</div>
+          <div className="brc">{"</h2>"}</div>
         </div>
 
         <div className="tag tab3">

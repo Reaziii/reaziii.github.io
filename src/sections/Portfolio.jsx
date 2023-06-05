@@ -41,8 +41,6 @@ const SinglePortFolio = ({ id }) => {
     <div className="portfolio-item">
       <p>Featured Project</p>
 
-      <img src={images[showcases[id].banner]} alt="" className="banner" />
-
       <h1>{showcases[id].title}</h1>
       <div className="date">
         <div className="br"></div>
@@ -55,6 +53,7 @@ const SinglePortFolio = ({ id }) => {
           </a>
         ))}
       </div>
+      <img src={images[showcases[id].banner]} alt="" className="banner" />
       <ul className="features">
         {showcases[id].features.map((item, key) => (
           <li key={key}>{item}</li>
