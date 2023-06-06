@@ -82,7 +82,14 @@ const Header = () => {
           {closebutton}
         </div>
         {menus.map((item, key) => (
-          <a href={item.link} key={key} className="menu-item">
+          <a
+            href={item.link}
+            key={key}
+            className="animate animate-top menu-item"
+            style={{
+              animationDelay: String(key * 0.2) + "s",
+            }}
+          >
             <p className="id">{item.id}</p>
             <span className="brc">{"<"} </span>
             <p className="title">{item.title}</p>

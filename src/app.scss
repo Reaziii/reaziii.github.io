@@ -217,7 +217,7 @@ section {
       // }
     }
   }
-  .close-button svg path{
+  .close-button svg path {
     fill: var(--lightcolor);
   }
 }
@@ -364,7 +364,7 @@ section {
       font-size: clamp(14px, 4vw, 16px);
       display: flex;
       align-items: center;
-      p{
+      p {
         margin: 0 5px;
       }
     }
@@ -458,15 +458,12 @@ section {
       .box2 {
         animation: resumebutton2 180s linear infinite;
       }
-      .box3 svg{
-        rect{
+      .box3 svg {
+        rect {
           fill: none;
         }
         height: 140px;
         width: 140px;
-        &.line1{
-
-        }
       }
       .under-box {
         position: absolute;
@@ -1200,5 +1197,81 @@ section {
   @media screen and (max-width: 768px) {
     // display: none!important;
     font-size: 10px;
+  }
+}
+
+.animate {
+  opacity: 0;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+.animate-top {
+  animation-name: animateTop;
+}
+
+@keyframes animateTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-bottom {
+  animation-name: animateBottom;
+}
+
+@keyframes animateBottom {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.animate-scale{
+  animation-name: animateScale;
+}
+
+@keyframes animateScale {
+  from {
+    transform: scale(.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.animate-line{
+  animation-name: animateLine;
+}
+@keyframes animateLine {
+  from {
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    height: 1;
+    opacity: 1;
+  }
+}
+
+.animate-opacity{
+  animation-name: animateOpacity;
+}
+
+@keyframes animateOpacity {
+  to{
+    opacity: 1;
   }
 }

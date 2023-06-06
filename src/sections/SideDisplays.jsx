@@ -24,7 +24,13 @@ const SideDisplays = () => {
       <div className="side-displays-right">
         <div className="contact-items">
           {contactitems.map((item, key) => (
-            <div key={key} className="contact-item">
+            <div
+              style={{
+                animationDelay: (4 - key) * 0.1 + 0.6 + "s",
+              }}
+              key={key}
+              className="animate animate-scale contact-item"
+            >
               <a target="_blank" href={item.link}>
                 {item.logo}
               </a>
@@ -32,11 +38,31 @@ const SideDisplays = () => {
           ))}
         </div>
 
-        <div className="line"></div>
+        <div
+          style={{
+            animationDelay: ".4s",
+          }}
+          className="animate animate-line line"
+        ></div>
       </div>
       <div className="side-displays-left">
-        <a target="_blank" href="mailto: baphonreaz@gmail.com" className="mail">baphonreaz@gmail.com</a>
-        <div className="line"></div>
+        <a
+          style={{
+            animationDelay: ".7s",
+            animationDuration: "1s",
+          }}
+          target="_blank"
+          href="mailto: baphonreaz@gmail.com"
+          className="animate animate-opacity mail"
+        >
+          baphonreaz@gmail.com
+        </a>
+        <div
+          style={{
+            animationDelay: ".4s",
+          }}
+          className="animate animate-line line"
+        />
       </div>
     </>
   );
