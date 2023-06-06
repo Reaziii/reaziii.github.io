@@ -9,7 +9,7 @@ const LandingPage = () => {
       <div className="landing-details">
         <div className="tag tab1">
           <div className="brc">{"<p>"}</div>
-          <p>Hello, my name is</p>
+          <p>Hello, I am</p>
           <div className="brc">{"</p>"}</div>
         </div>
         <div className="tag tab2">
