@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import landingpagedata from "../data/landingpage.json";
 import AnimateingText from "../components/AnimateingText";
-import { name, borderbuttonsvg, resumebuttonbackground1 } from "../assets/svgs";
+import { name, borderbuttonsvg, resumebuttonbackground1, RadatDotLine } from "../assets/svgs";
 const LandingPage = () => {
   const downloadResume = () => {};
   return (
@@ -37,7 +37,6 @@ const LandingPage = () => {
           <div className="download-button">
             <div className="box">{borderbuttonsvg}</div>
             <div className="box box2">{borderbuttonsvg}</div>
-
             <div className="under-box">
               <div className="background">{"</>"}</div>
               <div className="background bg2">{resumebuttonbackground1}</div>

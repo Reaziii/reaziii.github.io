@@ -453,6 +453,16 @@ section {
       .box2 {
         animation: resumebutton2 180s linear infinite;
       }
+      .box3 svg{
+        rect{
+          fill: none;
+        }
+        height: 140px;
+        width: 140px;
+        &.line1{
+
+        }
+      }
       .under-box {
         position: absolute;
         display: flex;
@@ -1184,5 +1194,6 @@ section {
 .brc {
   @media screen and (max-width: 768px) {
     // display: none!important;
+    font-size: 10px;
   }
 }
