@@ -365,7 +365,12 @@ section {
       display: flex;
       align-items: center;
       p {
-        margin: 0 5px;
+        margin: 0 22px;
+        @media screen and (max-width : 768px) {
+          margin: 0 11px;
+          
+        }
+       
       }
     }
     .tab2 {
@@ -772,6 +777,7 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     .skill {
       width: 16%;
       height: 100px;
