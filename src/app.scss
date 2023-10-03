@@ -817,8 +817,6 @@ section {
 }
 
 .experience {
-  min-height: 100vh;
-
   @media screen and (max-width: 1040px) {
     min-height: unset;
   }
@@ -1280,4 +1278,25 @@ section {
   to{
     opacity: 1;
   }
+}
+
+.cetficates{
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  .item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 16px;
+    font-family: var(--dmsansfont);
+    align-items: center;
+    @media screen and (max-width:720px) {
+      font-size: 10px;
+      align-items: flex-start;
+    }
+  }
+
+ 
 }

@@ -8,7 +8,7 @@ const Experience = () => {
         <div className="title-body">
           <p className="brc">{"<h3>"}</p>
           <h3>
-            <span>02. </span>Experience
+            <span>02.0 </span>Experience
           </h3>
           <p className="brc">{"</h3>"}</p>
         </div>
