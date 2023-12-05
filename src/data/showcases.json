@@ -94,24 +94,20 @@
     "year": "2021"
   },
   {
-    "title": "Safeexchange Crypto App",
-    "banner": "safeexchange",
+    "title": "Haspatal - 3rd Year Project",
+    "banner": "hashpatal",
     "features": [
-      "Intuitive and visually appealing user interface.",
-      "Smooth and engaging animations.",
-      "Responsive layout for different screen sizes.",
-      "Interactive components for user interaction.",
-      "Performance optimization for efficient operation."
+      "Admin Pannel ( managing doctors,specialities, assistant )",
+      "Assistant ( Appointments, Profile )",
+      "Doctors ( Handling Patients, Profile)",
+      "Patients ( Book Appointment, check status)",
+      "Login, Registration, Verify email, Forget password"
     ],
-    "technology": ["React js", "javascript", "SASS"],
+    "technology": ["PHP", "SQL", "Web"],
     "links": [
       {
         "icon": "github",
-        "url": "https://github.com/Reaziii/safecity"
-      },
-      {
-        "icon": "link",
-        "url": "https://safeexchange.netlify.app/"
+        "url": "https://github.com/Reaziii/hashpatal"
       }
     ],
     "year": "2021"

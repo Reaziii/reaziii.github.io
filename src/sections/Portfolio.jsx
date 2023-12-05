@@ -4,11 +4,13 @@ import xplayer from "../assets/xplayer.png";
 import ecomshop from "../assets/ecomshop.png";
 import safeexchange from "../assets/safeexchange.png";
 import peertopeer from "../assets/peertopeer.png";
+import hashpatal from "../assets/hashpatal.png"
 const images = {
   xplayer,
   ecomshop,
   safeexchange,
   peertopeer,
+  hashpatal
 };
 const urlicons = {
   github: <i class="fa-brands fa-github"></i>,
